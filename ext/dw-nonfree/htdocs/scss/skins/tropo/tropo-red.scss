@@ -139,7 +139,7 @@ $table-row-font-color:  $text-color;
 // navigation
 $topbar-bgimage:                       "/img/tropo-red/like-1.png";
 $topbar-bgimage-hover:                 "/img/tropo-red/like-1.png";
-$topbar-bgimage-position:              11px 50% no-repeat;
+$topbar-bgimage-position:              11px 50%/11px auto no-repeat;
 
 $topbar-bg:                            transparent url($topbar-bgimage) $topbar-bgimage-position;
 $topbar-link-weight:                   normal;
