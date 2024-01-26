@@ -218,11 +218,6 @@ sub get_menu_navigation {
             name  => 'explore',
             items => [
                 {
-                    url     => "$LJ::SITEROOT/interests",
-                    text    => "menunav.explore.interests",
-                    display => $always,
-                },
-                {
                     url     => "$LJ::SITEROOT/directorysearch",
                     text    => "menunav.explore.directorysearch",
                     display => $always,
@@ -231,26 +226,6 @@ sub get_menu_navigation {
                     url     => "$LJ::SITEROOT/search",
                     text    => "menunav.explore.sitesearch",
                     display => @LJ::SPHINX_SEARCHD ? 1 : 0,
-                },
-                {
-                    url     => "$LJ::SITEROOT/latest",
-                    text    => "menunav.explore.latestthings",
-                    display => $always,
-                },
-                {
-                    url     => "$LJ::SITEROOT/random",
-                    text    => "menunav.explore.randomjournal",
-                    display => $always,
-                },
-                {
-                    url     => "$LJ::SITEROOT/community/random",
-                    text    => "menunav.explore.randomcommunity",
-                    display => $always,
-                },
-                {
-                    url     => "$LJ::SITEROOT/manage/circle/popsubscriptions",
-                    text    => "menunav.explore.popsubscriptions",
-                    display => $loggedin_popsubscriptions,
                 },
                 {
                     url     => "$LJ::SITEROOT/support/faq",
@@ -262,32 +237,6 @@ sub get_menu_navigation {
         {
             name  => 'shop',
             items => [
-                {
-                    url       => "$LJ::SITEROOT/shop",
-                    text      => "menunav.shop.paidtime2",
-                    text_opts => { sitenameshort => $LJ::SITENAMESHORT },
-                    display   => LJ::is_enabled('payments') ? 1 : 0,
-                },
-                {
-                    url     => "$LJ::SITEROOT/shop/history",
-                    text    => "menunav.shop.history",
-                    display => LJ::is_enabled('payments') && $loggedin ? 1 : 0,
-                },
-                {
-                    url     => "$LJ::SITEROOT/shop/gifts",
-                    text    => "menunav.shop.gifts",
-                    display => LJ::is_enabled('payments') && $loggedin ? 1 : 0,
-                },
-                {
-                    url     => "$LJ::SITEROOT/shop/randomgift",
-                    text    => "menunav.shop.sponsor",
-                    display => LJ::is_enabled('payments') ? 1 : 0,
-                },
-                {
-                    url     => "$LJ::SITEROOT/shop/transferpoints",
-                    text    => "menunav.shop.transferpoints",
-                    display => LJ::is_enabled('payments') && $loggedin_person ? 1 : 0,
-                },
                 {
                     url       => $LJ::MERCH_URL,
                     text      => "menunav.shop.merchandise",
