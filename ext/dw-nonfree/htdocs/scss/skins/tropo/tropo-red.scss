@@ -33,9 +33,9 @@
 
 
 // color names. Only use these variables in the color assignment section
-$_red:              #c1272d; // foreground red
-$_dark-red:         #a42226; // background red
-$_pink:             #f4717a;
+$_red:              #b161bf; // foreground red
+$_dark-red:         #716dc6; // background red
+$_pink:             #9995ef;
 $_light-pink:       #ffd8d8;
 
 $_light-gray:       #f5f5f5;
@@ -137,8 +137,8 @@ $table-head-font-color: $primary-text-color;
 $table-row-font-color:  $text-color;
 
 // navigation
-$topbar-bgimage:                       "/img/tropo-red/icon_menu_swirl.png";
-$topbar-bgimage-hover:                 "/img/tropo-red/icon_menu_swirl_dropdown.png";
+$topbar-bgimage:                       "/img/tropo-red/like-1.png";
+$topbar-bgimage-hover:                 "/img/tropo-red/like-1.png";
 $topbar-bgimage-position:              11px 50% no-repeat;
 
 $topbar-bg:                            transparent url($topbar-bgimage) $topbar-bgimage-position;
@@ -156,7 +156,7 @@ $topbar-menu-link-color:               $topbar-link-color;
 $topbar-menu-icon-color:               $topbar-link-color;
 
 $topbar-height: 2rem;
-$topbar-dropdown-toggle-color: $soft-accent-color;
+$topbar-dropdown-toggle-color: $_dark-red;
 
 $masthead-bottom-accent-color:         $soft-accent-color;
 

@@ -39,9 +39,9 @@ the same terms as Perl itself.  For a copy of the license, please reference
 [%- BLOCK block.page -%]
 [%- IF logo_path -%]
 [%- ELSIF tropo_color != 'red' -%]
-    [%- logo_path = '/tropo-red/dw_logo_' _ tropo_color _ '.png' -%]
+    [%- logo_path = '/tropo-red/dreamish.org.png' -%]
 [%- ELSE -%]
-    [%- logo_path = '/tropo-red/dw_logo.png' -%]
+    [%- logo_path = '/tropo-red/dreamish.org.png' -%]
 [%- END -%]
 
 [%- IF resource_group == "foundation" -%]
@@ -137,9 +137,6 @@ the same terms as Perl itself.  For a copy of the license, please reference
                 
                 <nav role="navigation" aria-label="[% 'sitescheme.navigation.sitelinks' | ml %]">
                     [% PROCESS block.menunav %]
-                    <div role="search">
-                    [% dw_scheme.search_render %]
-                    </div>
                 </nav>
                 <footer role="contentinfo">
                     [% PROCESS block.footer %]
