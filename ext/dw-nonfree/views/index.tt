@@ -128,28 +128,4 @@
     </tbody>
    </table> 
   </div>
-
-<div id="frontpage-links" class="row">
-    [% colwidth = (12 / columns.size) %]
-    [% FOREACH column IN columns %]
-        <div id="links-[% column.name %]" class="links-column columns medium-[% colwidth %]">
-            <h2>[% dw.ml( ".links.${column.name}", { sitename => site.nameshort } ) %]</h2>
-            <dl>
-            [% FOREACH item IN column.items %]
-                [% href = item.0 
-                    ml = item.1
-                    postfix = item.2 
-                %]
-                <dt><a href="[% href %]">[% dw.ml( ".links.${column.name}.${name}$ml", { sitename => site.nameshort } ) %]</a>
-                [% dw.ml(".links.${column.name}.$postfix") IF postfix %]
-                </dt>
-                <dd>[% dw.ml( ".links.${column.name}.${name}${ml}.desc", { sitename => site.nameshort } ) %]</dd>
-            [% END %]
-            </dl>
-            [% IF column.footnote %]
-            <p><small>[% dw.ml( ".links.${column.name}.${column.footnote}", { sitename => site.nameshort } ) %]</small></p>
-            [% END %]
-        </div>
-    [% END %]
-</div>
 [%- END -%]
