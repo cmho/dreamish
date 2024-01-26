@@ -76,6 +76,10 @@ body {
     top: 2.25em;
     left: 0;
 }
+#masthead #logo img {
+    max-width: 100%;
+    max-height: 4em;
+}
 
 #account-links {
     position: absolute;
