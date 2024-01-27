@@ -610,7 +610,7 @@ sub ljuser {
     my $profile;
     my $ps = DW::Pay::get_paid_status( $user, no_cache => 1 );
     my $level = $LJ::CAP{ $ps->{typeid} }->{_account_type};
-    my $imguser = '/silk/identity/'.$user->{$level}.'png';
+    my $imguser = '/silk/identity/'.$level.'png';
 
     my $make_tag = sub {
         my ( $fil, $url, $x, $y, $type ) = @_;
