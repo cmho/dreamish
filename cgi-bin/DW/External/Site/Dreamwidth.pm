@@ -56,6 +56,11 @@ sub badge_image {
 
     my $type = $self->journaltype($u) || 'P';
     my $gif  = {
+        S => [ '/silk/identity/starlight.png', 16, 16 ],
+        G => [ '/silk/identity/golden.png',    16, 16 ],
+        M => [ '/silk/identity/mastermind.png', 16, 16 ],
+        B => [ '/silk/identity/bejeweled.png', 16, 16 ],
+        T => [ '/silk/identity/staff.png',     16, 16 ],
         P => [ '/silk/identity/user.png',      16, 16 ],
         C => [ '/silk/identity/community.png', 16, 16 ],
         Y => [ '/silk/identity/feed.png',      16, 16 ],

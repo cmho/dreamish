@@ -218,12 +218,12 @@ sub can_show_location {
 # -- members only if community's paid
 sub can_track_all_community_comments {
     my ( $remote, $journal ) = @_;
-    return 1
-        if LJ::isu($journal)
-        && $journal->is_community
-        && ( $remote->can_manage_other($journal)
-        || $journal->get_cap('track_all_comments')
-        || $journal->is_paid && $remote->member_of($journal) );
+    return 1;
+#        if LJ::isu($journal)
+#        && $journal->is_community
+#        && ( $remote->can_manage_other($journal)
+#        || $journal->get_cap('track_all_comments')
+#        || $journal->is_paid && $remote->member_of($journal) );
 }
 
 sub can_track_defriending {
