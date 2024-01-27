@@ -45,6 +45,14 @@
 
 .field.paid_class.premium=Premium Paid
 
+.field.paid_class.starlight=Starlight
+
+.field.paid_class.golden=Golden
+
+.field.paid_class.mastermind=Mastermind
+
+.field.paid_class.bejeweled=Bejeweled
+
 .field.paid_months.label=Months of paid time, if selected:
 
 .field.suggest_journal.label=Suggest Journal:
@@ -54,4 +62,3 @@
 .title.create=Create Promo Code
 
 .title.edit=Edit Promo Code: [[code]]
-

@@ -24,6 +24,14 @@ invitecodes.userclass.permusers=Permanent users
 
 invitecodes.userclass.premium_paid=Premium Paid accounts
 
+invitecodes.userclass.starlight=Starlight accounts
+
+invitecodes.userclass.golden=Golden accounts
+
+invitecodes.userclass.mastermind=Mastermind accounts
+
+invitecodes.userclass.bejeweled=Bejeweled accounts
+
 langname.en_DW=English
 
 shop.admin.checkmoneyorder.body=[[user]] just sent a check/money order. Receipt is at: [[receipturl]]
