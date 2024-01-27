@@ -57,7 +57,8 @@
       <tr>
         <td>
         [%- form.select( name = 'type', label = dw.ml( '.label.givetime' ),
-                         items = [ 'golden',    dw.ml( '.select.golden'),
+                         items = [ 'starlight', dw.ml( '.select.starlight' ),
+                                   'golden',    dw.ml( '.select.golden'),
                                    'mastermind', dw.ml( '.select.mastermind'),
                                    'bejeweled',    dw.ml( '.select.bejeweled'),
                                    'blank',   '',

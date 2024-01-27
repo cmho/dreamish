@@ -136,7 +136,7 @@ class="bargraph" />
         <th>[% ".paid.colhdr.$h" | ml %]</th>
     [% END %]
     </tr></thead>
-    [% FOREACH level = [ 'paid' 'premium' 'seed' ] %]
+    [% FOREACH level = [ 'starlight' 'golden' 'mastermind' 'bejeweled' ] %]
         <tr><th>[% ".paid.rowhdr.$level" | ml %]</th>
         [% n = paid.$level.defined ? paid.$level : 0 %]
         <td class='stats'>[% n %]</td>
