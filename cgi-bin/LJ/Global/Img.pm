@@ -403,6 +403,41 @@ $img{'id_user'} = {
     alt    => 'img.id_user',
 };
 
+$img{'id_starlight'} = {
+    src    => '/silk/identity/starlight.png',
+    width  => 16,
+    height => 16,
+    alt    => 'img.id_starlight',
+};
+
+$img{'id_golden'} = {
+    src    => '/silk/identity/golden.png',
+    width  => 16,
+    height => 16,
+    alt    => 'img.id_golden',
+};
+
+$img{'id_mastermind'} = {
+    src    => '/silk/identity/mastermind.png',
+    width  => 16,
+    height => 16,
+    alt    => 'img.id_mastermind',
+};
+
+$img{'id_bejeweled'} = {
+    src    => '/silk/identity/bejeweled.png',
+    width  => 16,
+    height => 16,
+    alt    => 'img.id_bejeweled',
+};
+
+$img{'id_staff'} = {
+    src    => '/silk/identity/staff.png',
+    width  => 16,
+    height => 16,
+    alt    => 'img.id_staff',
+};
+
 $img{'id_community-24'} = {
     src    => '/silk/24x24/community.png',
     width  => 24,

@@ -83,6 +83,9 @@ sub userpic {
     my $user   = $u->user;
     my $remote = $self->{remote};
     my $ret    = {};
+    my $ps = DW::Pay::get_paid_status( $self, no_cache => 1 );
+    my $level = $LJ::CAP{ $ps->{typeid} }->{_account_type};
+    my $img = '/silk/identity/'.$self->{$level}.'png';
 
     # syndicated accounts have a very simple thing
     if ( $u->is_syndicated ) {
@@ -95,7 +98,7 @@ sub userpic {
             $ret->{userpic} = $up->url;
         }
         elsif ( $u->is_personal ) {
-            $ret->{userpic}  = "$LJ::IMGPREFIX/profile_icons/user.png";
+            $ret->{userpic}  = $img;
             $ret->{alt_text} = _profile_ml('.userpic.user.alt');
             $ret->{width}    = 100;
             $ret->{height}   = 100;

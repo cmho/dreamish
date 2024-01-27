@@ -608,6 +608,9 @@ sub ljuser {
     my $journal_url = $opts->{'journal_url'} || '';
     my $display_class = $opts->{no_ljuser_class} ? "" : " class='ljuser'";
     my $profile;
+    my $ps = DW::Pay::get_paid_status( $self, no_cache => 1 );
+    my $level = $LJ::CAP{ $ps->{typeid} }->{_account_type};
+    my $imguser = '/silk/identity/'.$self->{$level}.'png';
 
     my $make_tag = sub {
         my ( $fil, $url, $x, $y, $type ) = @_;
@@ -655,7 +658,7 @@ sub ljuser {
     unless ( $u && isu($u) ) {
         $user    = LJ::canonical_username($user);
         $profile = "$LJ::SITEROOT/profile?user=$user";
-        return $make_tag->( 'silk/identity/user.png', "$LJ::SITEROOT/profile?user=$user", 17 );
+        return $make_tag->( $imguser, "$LJ::SITEROOT/profile?user=$user", 17 );
     }
 
     $profile = $u->profile_url;
