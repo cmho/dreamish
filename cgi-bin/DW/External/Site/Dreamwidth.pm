@@ -51,22 +51,24 @@ sub journal_url {
 # returns info for the badge image (head icon) for this user
 sub badge_image {
     my ( $self, $u ) = @_;
+    my $img;
     croak 'need a DW::External::User'
         unless $u && ref $u eq 'DW::External::User';
 
     my $type = $self->journaltype($u) || 'P';
     my $gif  = {
-        S => [ '/silk/identity/starlight.png', 16, 16 ],
-        G => [ '/silk/identity/golden.png',    16, 16 ],
-        M => [ '/silk/identity/mastermind.png', 16, 16 ],
-        B => [ '/silk/identity/bejeweled.png', 16, 16 ],
-        T => [ '/silk/identity/staff.png',     16, 16 ],
         P => [ '/silk/identity/user.png',      16, 16 ],
         C => [ '/silk/identity/community.png', 16, 16 ],
         Y => [ '/silk/identity/feed.png',      16, 16 ],
     };
 
-    my $img = $gif->{$type};
+    if ($type eq 'P') {
+        my $ps = DW::Pay::get_paid_status( $self, no_cache => 1 );
+        my $level = $LJ::CAP{ $ps->{typeid} }->{_account_type};
+        $img = [ '/silk/identity/'.$self->{$level}.'png', 16, 16 ];
+    } else {
+        $img = $gif->{$type};
+    }
     return {
         url    => $LJ::IMGPREFIX . $img->[0],
         width  => $img->[1],
