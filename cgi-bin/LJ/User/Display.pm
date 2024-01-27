@@ -704,15 +704,15 @@ sub ljuser {
     else {
         if ( $u->get_cap('staff_headicon') ) {
             return $make_tag->(
-                "silk/${head_size}/user_staff.png",
+                "silk/identity/staff.png",
                 $url, $head_size, '', $type_readable
             ) if $head_size;
-            return $make_tag->( 'silk/identity/user_staff.png', $url, 17, '', 'staff' );
+            return $make_tag->( 'silk/identity/staff.png', $url, 17, '', 'staff' );
         }
         else {
-            return $make_tag->( "silk/${head_size}/user.png", $url, $head_size, '', $type_readable )
+            return $make_tag->( $imguser, $url, $head_size, '', $type_readable )
                 if $head_size;
-            return $make_tag->( 'silk/identity/user.png', $url, 17, '', $type_readable );
+            return $make_tag->( $imguser, $url, 17, '', $type_readable );
         }
     }
 }
