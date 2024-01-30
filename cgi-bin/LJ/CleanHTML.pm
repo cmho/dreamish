@@ -1856,6 +1856,7 @@ sub clean_userbio {
             eat          => $userbio_eat,
             remove       => $userbio_remove,
             cleancss     => 1,
+            nocss        => 0,
 
             # Bios are always local, but for now, we are marking them as
             # HTML so that people don't have to reformat everything.
