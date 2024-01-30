@@ -1636,7 +1636,6 @@ my @comment_all = qw(
 my $event_eat    = $subject_eat;
 my $event_remove = [qw[ bgsound embed object link body meta noscript plaintext noframes ]];
 
-my $userbio_eat    = $event_eat;
 my $userbio_remove = $event_remove;
 
 # An "event" is the body text of a journal entry. But this also gets called for
@@ -1833,12 +1832,26 @@ sub clean_userbio {
     my ( $ref, $strip_links ) = @_;
     return undef unless ref $ref;
 
+    my @userbio_all = qw(
+        table tr td th tbody tfoot thead colgroup caption col
+        a sub sup xmp bdo q span
+        b i u tt s strike big small font
+        abbr acronym cite code dfn em kbd samp strong var del ins
+        h1 h2 h3 h4 h5 h6 div blockquote address pre center
+        ul ol li dl dt dd
+        area map form textarea
+        img br hr p col
+        summary details style
+    );
+    my $userbio_eat = [qw[ head title layer iframe applet object xml param base ]];
+
     clean(
         $ref,
         {
             addbreaks    => 1,
             attrstrip    => [qw[style]],
-            mode         => 'allow',
+            mode         => 'deny',
+            allow        => @userbio_all,
             noearlyclose => 1,
             eat          => $userbio_eat,
             remove       => $userbio_remove,
