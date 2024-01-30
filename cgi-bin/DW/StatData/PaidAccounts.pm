@@ -57,11 +57,15 @@ Example: paid, premium, seed
 
 =over
 
-=item paid
+=item starlight
 
-=item premium
+=item golden
 
-=item seed
+=item mastermind
+
+=item bejeweled
+
+=item staff
 
 =back
 
