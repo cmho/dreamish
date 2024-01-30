@@ -1850,7 +1850,7 @@ sub clean_userbio {
         {
             addbreaks    => 1,
             attrstrip    => [qw[style]],
-            mode         => 'deny',
+            mode         => 'allow',
             allow        => @userbio_all,
             noearlyclose => 1,
             eat          => $userbio_eat,
