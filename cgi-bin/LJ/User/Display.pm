@@ -608,7 +608,7 @@ sub ljuser {
     my $journal_url = $opts->{'journal_url'} || '';
     my $display_class = $opts->{no_ljuser_class} ? "" : " class='ljuser'";
     my $profile;
-    my $ps = DW::Pay::get_current_account_status( $user );
+    my $ps = DW::Pay::get_paid_status( $user, no_cache => 1 );
     my $level = $LJ::CAP{ $ps->{typeid} }->{_account_type};
     my $imguser = 'silk/identity/'.$level.'.png';
 
