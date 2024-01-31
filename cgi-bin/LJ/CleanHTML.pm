@@ -1849,7 +1849,6 @@ sub clean_userbio {
         $ref,
         {
             addbreaks    => 1,
-            attrstrip    => [qw[style]],
             mode         => 'allow',
             allow        => @userbio_all,
             noearlyclose => 1,
