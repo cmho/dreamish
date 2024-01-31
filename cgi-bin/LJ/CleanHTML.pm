@@ -1857,6 +1857,9 @@ sub clean_userbio {
             remove       => $userbio_remove,
             cleancss     => 1,
             nocss        => 0,
+            remove_colors => 0,
+            remove_sizes => 0,
+            remove_fonts => 0,
 
             # Bios are always local, but for now, we are marking them as
             # HTML so that people don't have to reformat everything.
