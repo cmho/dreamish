@@ -537,7 +537,7 @@ sub add_paid_time {
     my $rv = DW::Pay::update_paid_status(
         $u,
         typeid      => $newtypeid,
-        permanent   => $permanent,
+        permanent   => 1,
         _set_months => $amonths,
         _add_secs   => $asecs,
     );
@@ -975,4 +975,3 @@ sub validate_deliverydate {
 }
 
 1;
-

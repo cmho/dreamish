@@ -89,7 +89,7 @@ sub main_controller {
         my $months = $post->{months} || 0;
         my $days   = $post->{days}   || 0;
 
-        $months = 99 if $type eq 'seed';
+        $months = 99;
 
         if ( $type eq 'expire' ) {
             my $done = DW::Pay::expire_user( $u, force => 1 );
