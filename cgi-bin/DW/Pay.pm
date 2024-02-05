@@ -475,8 +475,8 @@ sub add_paid_time {
     if ( my $ps = DW::Pay::get_paid_status( $u, no_cache => 1 ) ) {
 
         # easy bail if they're permanent
-        return error( ERR_FATAL, 'User is already permanent, cannot apply more time.' )
-            if $ps->{permanent};
+        #return error( ERR_FATAL, 'User is already permanent, cannot apply more time.' )
+        #    if $ps->{permanent};
 
         # not permanent, but do they have at least a minute left?
         if ( $ps->{expiresin} > 60 ) {
