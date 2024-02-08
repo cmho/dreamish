@@ -45,85 +45,71 @@
         "stc/tropo/homepage.css",
 ) -%]
 
-<div style="background:#f4f4f4; padding:20px; width:910px;"> 
-   <table style="width:910px; margin-top:40px;"> 
+<div style="background:#f4f4f4; padding:20px; max-width:870px; width: calc(100% - 40px)"> 
+   <table style="width: 100%; margin-top:40px;"> 
     <tbody>
      <tr> 
       <td valign="top"> 
-       <div style="width:700px;"> 
+       <div style="max-width:700px; width: 100%;"> 
         <font style="font-family:lemonmilk; font-size:52px; line-height:48px; font-weight:bold; letter-spacing:-4px; background: -webkit-linear-gradient(#da8bc4, #9795f0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-style:oblique;">WELCOME!&nbsp;</font> 
-        <br /> 
-        <div style="font-size:13px; line-height:16px; font-family:helvetica, arial; text-align:justify; width:795px;">
+        <br> 
+        <div style="font-size:13px; line-height:16px; font-family:helvetica, arial; text-align:justify; max-width:795px;">
           Hi, Hello! Currently access to dreamish.org is by invitation only. We are a small collective of writers collaborating together in various sol and non-sol settings. To join you'll need to be referred by a current member or apply using the link below for consideration.
-         <br />
-         <br /> Our terms for creating an account are found below. Please read over them carefully as everyone is held to these standards and we take creating a safe environment for everyone to explore their creativity seriously. By creating a username you are agreeing to abide by these rules. 
+         <br>
+         <br> Our terms for creating an account are found below. Please read over them carefully as everyone is held to these standards and we take creating a safe environment for everyone to explore their creativity seriously. By creating a username you are agreeing to abide by these rules. 
         </div> 
        </div> </td> 
       <td valign="middle"> 
        <div style="text-align:center;"> 
-        <br /> 
-        <img src="https://i.imgur.com/EqJkqtI.png" style="width:80px;" />
-        <br /> 
+        <br> 
+        <img src="https://i.imgur.com/EqJkqtI.png" style="width:80px;">
+        <br> 
         <div style="font-size:7px; line-height:8px; font-family:helvetica, arial; color:#5553b2; letter-spacing:.5px; font-weight:bold;">
          &nbsp;BE KIND, OR ELSE
         </div> 
        </div> </td> 
      </tr> 
     </tbody>
-   </table> 
-   <table style="padding:10px;"> 
-    <tbody>
-     <tr valign="top" colspan="2"> 
-      <td style="" align="center"> 
-       <div style="width:600px; text-align:center: padding:10px; font-size:12px; line-height:16px; font-family:helvetica, arial; text-transform:uppercase; font-weight:bold; color:#6a67cb; text-shadow: 1px 1px 1px #f5e7f1;">
+   </table>
+  <div style="max-width:600px; margin: 0 auto; text-align:center; padding:10px; font-size:12px; line-height:16px; font-family:helvetica, arial; text-transform:uppercase; font-weight:bold; color:#6a67cb; text-shadow: 1px 1px 1px #f5e7f1;">
          To inquire about joining us, please submit a request 
         <a href="http://hello.dreamish.org" style="text-decoration:none; color:#6a67cb; text-shadow: 1px 1px 1px #f5e7f1;">here</a>. 
-       </div> </td> 
-     </tr> 
-    </tbody>
-   </table> 
-   <table style="padding:5px;"> 
-    <tbody>
-     <tr> 
-      <td valign="top" style="padding:5px;"> 
-       <div style="width:265px; background-image: linear-gradient(45deg, #da8bc4, #9795f0); border-radius:6px; padding:6px; font-size:10.5px; line-height:14px; font-family:trebuchet ms, arial; text-align:justify; color:#fff; text-transform:uppercase; font-weight:; letter-spacing:.5px;">
+       </div>
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 10px; justify-content: center;">
+    <div style="width: calc(30% - 10px); min-width: 250px; background-image: linear-gradient(45deg, #da8bc4, #9795f0); border-radius:6px; padding:6px; font-size:10.5px; line-height:14px; font-family:trebuchet ms, arial; text-align:justify; color:#fff; text-transform:uppercase; font-weight:; letter-spacing:.5px;">
          Resources are shared freely within the community here. That includes everything from html codes to icons or anything else you may want to contribute. our resources comm is a place for you to ask questions, get help with coding, find resources, and share your own creations. 
-       </div> </td> 
-      <td valign="top" style="padding:5px;"> 
-       <div style="width:300px; background-image: linear-gradient(-45deg, #da8bc4, #9795f0); border-radius:6px; padding:6px; font-size:10.5px; line-height:14px; font-family:trebuchet ms, arial; text-align:justify; color:#fff; text-transform:uppercase; font-weight:; letter-spacing:.5px;">
+       </div>
+    <div style="width: calc(33% - 10px); min-width: 250px; background-image: linear-gradient(-45deg, #da8bc4, #9795f0); border-radius:6px; padding:6px; font-size:10.5px; line-height:14px; font-family:trebuchet ms, arial; text-align:justify; color:#fff; text-transform:uppercase; font-weight:; letter-spacing:.5px;">
          dreamish's focus is on literate writing: paragraph, creative tags with others and writing that explores a character's arc. let's all remember that this is a hobby and none of us are on the ny times bestseller list. so while we do expect quality writing, making fun of others and their writing will result in you being banned. 
-       </div> </td> 
-      <td valign="top" style="padding:5px;"> 
-       <div style="width:265px; background-image: linear-gradient(45deg, #da8bc4, #9795f0); border-radius:6px; padding:6px; font-size:10.5px; line-height:14px; font-family:trebuchet ms, arial; text-align:justify; color:#fff; text-transform:uppercase; font-weight:; letter-spacing:.5px;">
+       </div>
+    <div style="width: calc(30% - 10px); min-width: 250px; background-image: linear-gradient(45deg, #da8bc4, #9795f0); border-radius:6px; padding:6px; font-size:10.5px; line-height:14px; font-family:trebuchet ms, arial; text-align:justify; color:#fff; text-transform:uppercase; font-weight: normal; letter-spacing:.5px;">
          coming into a new space can be a scary transition, especially when everyone uses different lingo for what ends up being the same thing. to help combat this and make everyone feel included we have created a community with helpful guides and a space that new members can ask questions. 
-       </div> </td> 
-     </tr> 
-    </tbody>
-   </table> 
+       </div>
+  </div>
    <table style="padding:5px;"> 
     <tbody>
      <tr> 
       <td valign="top" style="padding:5px;"> 
-       <div style="width:850px; font-size:13px; line-height:16px; font-family:helvetica, arial; text-align:justify;"> 
+       <div style="max-width:850px; font-size:13px; line-height:16px; font-family:helvetica, arial; text-align:justify;"> 
         <font style="font-family:lemonmilk; font-size:20px; font-weight:bold; letter-spacing:-2px; background: -webkit-linear-gradient(#da8bc4, #9795f0); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">When creating an account you agree/understand that:</font>
-        <br /> 
+        <br> 
         <b style="color:#7c7ace; font-size:16px;">‣</b> While we believe in free speech and individual uniqueness, we do not allow any of the following: hatefulness, harassment, bullying, racism, transphobia, xenophobia, plaigerism, or anything else in that same line of thought. If evidence is provided and you are found in violation you will be banned from the site. 
-        <br />
-        <br /> 
+        <br>
+        <br> 
         <b style="color:#7c7ace; font-size:16px;">‣</b> Using Dreamish is free for members who join our existing games. We do accept donations toward server costs, but that is not required to join us. Currently you are not allowed to create any additional or private games on our server. We do not have paid or different levels of accounts that grant more features. 
-        <br />
-        <br /> 
+        <br>
+        <br> 
         <b style="color:#7c7ace; font-size:16px;">‣</b> We reserve the right to modify and/or discontinue, temporarily or permanently, the service (or any part thereof) with or without notice at any time. You agree that Dreamish shall not be liable to you or to any third party for any modification, suspension, or discontinuance of service. 
-        <br />
-        <br /> 
+        <br>
+        <br> 
         <b style="color:#7c7ace; font-size:16px;">‣</b> Any content posted on the site should follow your local state and federal laws. We are not liable for any poor choices you may make and reports of any illegal content will result in you being banned from the site permanently. 
-        <br />
-        <br /> 
+        <br>
+        <br> 
         <b style="color:#7c7ace; font-size:16px;">‣</b> We do not allow hoarding of usernames and reserve the right to terminate and purge your account. This will only occur if you break any of the above rules or 30-45 days from your removal of any game. Please be sure to backup and save your writing if you opt out of a game. 
-        <br />
-        <br /> 
+        <br>
+        <br> 
         <b style="color:#7c7ace; font-size:16px;">‣</b> Each user account gets 15 icons to start and the ability to make a custom layout. As your account matures you'll be moved up levels and be allowed more icon space. 
-       </div> <br /> <br /> </td> 
+       </div> <br> <br> </td> 
      </tr> 
     </tbody>
    </table> 
