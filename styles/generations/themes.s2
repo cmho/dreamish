@@ -10,7 +10,7 @@ layerinfo name = "Sunrise";
 layerinfo redist_uniq = "generations/sunrise";
 layerinfo author_name = "Tess Nelson @tessisamess";
 
-function Page::print_theme_stylesheet() { """/*--
+function print_stylesheet() { """/*--
 
 	S2 Generations Example Layout
 	Layout by tessisamess
