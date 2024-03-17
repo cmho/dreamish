@@ -2,6 +2,7 @@
 layerinfo "type" = "layout";
 layerinfo "name" = "S2 Generations";
 layerinfo author_name = "Tess Nelson @tessisamess";
+layerinfo "redist_uniq" = "generations/layout";
 layerinfo source_viewable = "1";
 layerinfo is_public = 1;
 
