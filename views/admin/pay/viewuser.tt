@@ -61,6 +61,11 @@
                                    'golden',    dw.ml( '.select.golden'),
                                    'mastermind', dw.ml( '.select.mastermind'),
                                    'bejeweled',    dw.ml( '.select.bejeweled'),
+                                   'lover',     dw.ml( '.select.lover' ),
+                                   'delicate',  dw.ml( '.select.delicate' ),
+                                   'enchanted', dw.ml( '.select.enchanted' ),
+                                   'karma',     dw.ml( '.select.karma' ),
+                                   'mirrorball', dw.ml( '.select.mirrorball' ),
                                    'blank',   '',
                                    'expire',  dw.ml( '.select.expire') ] ) -%]
         </td>
