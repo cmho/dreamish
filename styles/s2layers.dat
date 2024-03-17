@@ -27,6 +27,9 @@ drifting/themes          theme+                      drifting/layout
 easyread/layout          layout                      core2
 easyread/themes          theme+                      easyread/layout
 
+generations/layout       layout                      core1
+generations/themes       theme+                      generations/layout
+
 goldleaf/layout          layout                      core2
 goldleaf/themes          theme+                      goldleaf/layout
 
