@@ -65,6 +65,16 @@ Example: paid, premium, seed
 
 =item bejeweled
 
+=item lover
+
+=item delicate
+
+=item enchanted
+
+=item karma
+
+=item mirrorball
+
 =item staff
 
 =back

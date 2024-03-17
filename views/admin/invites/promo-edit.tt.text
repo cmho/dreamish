@@ -53,6 +53,16 @@
 
 .field.paid_class.bejeweled=Bejeweled
 
+.field.paid_class.lover=Lover
+
+.field.paid_class.delicate=Delicate
+
+.field.paid_class.enchanted=Enchanted
+
+.field.paid_class.karma=Karma
+
+.field.paid_class.mirrorball=Mirrorball
+
 .field.paid_months.label=Months of paid time, if selected:
 
 .field.suggest_journal.label=Suggest Journal:

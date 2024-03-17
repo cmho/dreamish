@@ -32,6 +32,16 @@ invitecodes.userclass.mastermind=Mastermind accounts
 
 invitecodes.userclass.bejeweled=Bejeweled accounts
 
+invitecodes.userclass.lover=Lover accounts
+
+invitecodes.userclass.delicate=Delicate accounts
+
+invitecodes.userclass.enchanted=Enchanted accounts
+
+invitecodes.userclass.karma=Karma accounts
+
+invitecodes.userclass.mirrorball=Mirrorball accounts
+
 langname.en_DW=English
 
 shop.admin.checkmoneyorder.body=[[user]] just sent a check/money order. Receipt is at: [[receipturl]]

@@ -431,6 +431,41 @@ $img{'id_bejeweled'} = {
     alt    => 'img.id_bejeweled',
 };
 
+$img{'id_lover'} = {
+    src    => '/silk/identity/lover.png',
+    width  => 16,
+    height => 16,
+    alt    => 'img.id_lover',
+};
+
+$img{'id_delicate'} = {
+    src    => '/silk/identity/delicate.png',
+    width  => 16,
+    height => 16,
+    alt    => 'img.id_delicate',
+};
+
+$img{'id_enchanted'} = {
+    src    => '/silk/identity/enchanted.png',
+    width  => 16,
+    height => 16,
+    alt    => 'img.id_enchanted',
+};
+
+$img{'id_karma'} = {
+    src    => '/silk/identity/karma.png',
+    width  => 16,
+    height => 16,
+    alt    => 'img.id_karma',
+};
+
+$img{'id_mirrorball'} = {
+    src    => '/silk/identity/mirrorball.png',
+    width  => 16,
+    height => 16,
+    alt    => 'img.id_mirrorball',
+};
+
 $img{'id_staff'} = {
     src    => '/silk/identity/staff.png',
     width  => 16,

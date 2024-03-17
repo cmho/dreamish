@@ -70,6 +70,16 @@
 
 .select.bejeweled=Bejeweled Account
 
+.select.lover=Lover Account
+
+.select.delicate=Delicate Account
+
+.select.enchanted=Enchanted Account
+
+.select.karma=Karma Account
+
+.select.mirrorball=Mirrorball Account
+
 .statushistory=View statushistory for user.
 
 .title=Payment Manager - View User

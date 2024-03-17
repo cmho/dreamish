@@ -84,7 +84,7 @@ sub main_controller {
 
         my $type = $post->{type};
         return error_ml("$scope.error.invalidstatus")
-            unless $type =~ /^(?:starlight|golden|mastermind|bejeweled|expire)$/;
+            unless $type =~ /^(?:starlight|golden|mastermind|bejeweled|lover|delicate|enchanted|karma|mirrorball|expire)$/;
 
         my $months = $post->{months} || 0;
         my $days   = $post->{days}   || 0;

@@ -337,6 +337,15 @@
             '_name' => '_moveinprogress',
             'readonly' => 1,
         },
+        '6' => {  # 0x10
+            '_name' => 'Lover',
+            '_key' => 'lover_user',
+            '_visible_name' => 'Lover',
+            '_account_type' => 'lover',
+            '_refund_points' => 0,
+            %CAP_PAID,
+            'userpics' => 250
+        },
         '7' => {  # 0x80
             '_name' => 'Staff',
             '_key' => 'staff',
@@ -346,6 +355,42 @@
             %CAP_PREMIUM,
         },
         8 => { _name => 'beta', _key => 'betafeatures' }, # 0x100
+        '9' => {  # 0x10
+            '_name' => 'Delicate',
+            '_key' => 'delicate_user',
+            '_visible_name' => 'Delicate',
+            '_account_type' => 'Delicate',
+            '_refund_points' => 0,
+            %CAP_PAID,
+            'userpics' => 250
+        },
+        '10' => {  # 0x10
+            '_name' => 'Enchanted',
+            '_key' => 'enchanted_user',
+            '_visible_name' => 'Enchanted',
+            '_account_type' => 'Enchanted',
+            '_refund_points' => 0,
+            %CAP_PAID,
+            'userpics' => 250
+        },
+        '11' => {  # 0x10
+            '_name' => 'Karma',
+            '_key' => 'karma_user',
+            '_visible_name' => 'Karma',
+            '_account_type' => 'Karma',
+            '_refund_points' => 0,
+            %CAP_PAID,
+            'userpics' => 250
+        },
+        '12' => {  # 0x10
+            '_name' => 'Mirrorball',
+            '_key' => 'mirrorball_user',
+            '_visible_name' => 'Mirrorball',
+            '_account_type' => 'Mirrorball',
+            '_refund_points' => 0,
+            %CAP_PAID,
+            'userpics' => 250
+        },
     );
 
     # default capability class mask for new users:
