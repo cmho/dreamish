@@ -11,12 +11,12 @@
  */
 
 // color names. Only use these variables in the color assignment section
-$_dark-olive-green:  #999966;
-$_very-dark-olive:   darken($_dark-olive-green, 10%);// try to match visual impact of the top bar
-                                                     // which is $_dark-olive-green, but heavier to the eye
-$_bright-olive-green: #888833; // a little brighter than the dark olive green, to attract the eye
-$_light-olive-green: #ddddaa;
-$_lightest-olive-green: #eeeecc;
+$_dark-olive-green: #706dc0;
+$_very-dark-olive: darken($_dark-olive-green, 10%); // try to match visual impact of the top bar
+// which is $_dark-olive-green, but heavier to the eye
+$_bright-olive-green: #9895e9; // a little brighter than the dark olive green, to attract the eye
+$_light-olive-green: #aaafdd;
+$_lightest-olive-green: #ceccee;
 
 $_white:             #fff;
 $_light-gray:        #f7f7f7;
