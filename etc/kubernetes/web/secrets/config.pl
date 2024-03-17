@@ -359,7 +359,7 @@
             '_name' => 'Delicate',
             '_key' => 'delicate_user',
             '_visible_name' => 'Delicate',
-            '_account_type' => 'Delicate',
+            '_account_type' => 'delicate',
             '_refund_points' => 0,
             %CAP_PAID,
             'userpics' => 250
@@ -368,7 +368,7 @@
             '_name' => 'Enchanted',
             '_key' => 'enchanted_user',
             '_visible_name' => 'Enchanted',
-            '_account_type' => 'Enchanted',
+            '_account_type' => 'enchanted',
             '_refund_points' => 0,
             %CAP_PAID,
             'userpics' => 250
@@ -377,7 +377,7 @@
             '_name' => 'Karma',
             '_key' => 'karma_user',
             '_visible_name' => 'Karma',
-            '_account_type' => 'Karma',
+            '_account_type' => 'karma',
             '_refund_points' => 0,
             %CAP_PAID,
             'userpics' => 250
@@ -386,7 +386,7 @@
             '_name' => 'Mirrorball',
             '_key' => 'mirrorball_user',
             '_visible_name' => 'Mirrorball',
-            '_account_type' => 'Mirrorball',
+            '_account_type' => 'mirrorball',
             '_refund_points' => 0,
             %CAP_PAID,
             'userpics' => 250
