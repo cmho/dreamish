@@ -52,6 +52,9 @@ forthebold/themes        theme+                      forthebold/layout
 funkycircles/layout      layout(core2base/layout)    core2
 funkycircles/themes      theme+                      funkycircles/layout
 
+generations/layout       layout(core2base/layout)    core2
+generations/themes       theme+                      generations/layout
+
 hibiscus/layout          layout(core2base/layout)    core2
 hibiscus/themes          theme+                      hibiscus/layout
 

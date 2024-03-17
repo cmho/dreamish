@@ -1,0 +1,1045 @@
+# -*-s2-*-
+layerinfo "type" = "layout";
+layerinfo "name" = "S2 Generations";
+layerinfo author_name = "Tess Nelson @tessisamess";
+layerinfo source_viewable = "1";
+layerinfo is_public = 1;
+
+propgroup presentation {
+
+    property string layout_type {
+        des = "Layout Configuration";
+        values = "CH|Custom Header|CS|Custom Sidebar|CHS|Custom Header & Sidebar";
+    }
+    set layout_type = "CH";
+
+    property string opt_footer {
+        des = "Use Custom Footer";
+        values = "no|No|yes|Yes";
+    }
+
+    property use page_recent_items;
+    property use page_friends_items;
+    property use page_day_sortorder;
+    property use page_year_sortorder;
+
+    set view_entry_disabled = true;
+
+    property bool opt_showtime {
+        des = "Show Posting Time on Entries";
+    }
+    set opt_showtime = false;
+
+    property bool opt_userpic_main {
+        des = "Show Userpics on Entries";
+    }
+    property bool opt_userpic_friends {
+        des = "Show Userpics on Entries on your Friends Page";
+    }
+    set opt_userpic_main = true;
+    set opt_userpic_friends = true;
+
+    property string opt_tag_display {
+    des = "Display of entry tags";
+    values = "list|List|hashtags|Hashtags|none|None";
+    }
+    set opt_tag_display = "list";
+
+    set tags_aware = true;
+    set external_stylesheet = true;
+}
+
+propgroup text {
+
+    # something about the DW framework won't let me remove the custom text from the user options
+    # sorry bout it!! it'll just be an eyesore i guess
+
+    property use text_post_comment;
+    property use text_read_comments;
+    property use lang_fmt_date_med;
+    property use lang_fmt_time_short;
+
+property string text_module_customtext {
+    noui = 1;
+}
+
+property string text_customtext_module {
+    noui = 1;
+    des = "Don't use this; it does nothing.";
+    maxlength = 50;
+    size = 20;
+}
+property string text_module_customtext_url {
+    noui = 1;
+    des = "Don't use this; it does nothing.";
+    maxlength = 100;
+    size = 30;
+}
+property string text_module_customtext_content {
+    noui = 1;
+    des = "Don't use this; it does nothing.";
+    cols = 50;
+    rows = 10;
+    string_mode = "html";
+}
+    set text_customtext_module = "Don't use this; it does nothing.";
+    set text_module_customtext_url = "Don't use this; it does nothing.";
+    set text_module_customtext_content = "Don't use this; it does nothing.";
+
+    property string text_view_recent{
+        des = "Text to view Recent Entries";
+    }
+    property string text_view_userinfo{
+        des = "Text to view Profile";
+    }
+    property string text_view_friends{
+        des = "Text to view Friends Page";
+    }
+    property string text_view_archive{
+        des = "Text to view Archive";
+    }
+    property string text_view_tags{
+        des = "Text to view Tags Page";
+    }
+
+    set text_view_recent = "Recent";
+    set text_view_userinfo = "Profile";
+    set text_view_friends = "Friends Page";
+    set text_view_archive = "Calendar";
+    set text_view_tags = "Tags Page";
+  
+    property string text_edit{
+        des = "Text to edit an entry";
+    }
+    property string text_edittag{
+        des = "Text to edit tags for an entry";
+    }
+
+    property string text_add_to_memories{
+        des = "Text to add an entry into memories";
+    }
+    property string text_track_comments{
+        des = "Text to track new comments on an entry";
+    }
+    property string text_untrack_comments{
+        des = "Text to stop tracking new comments on an entry";
+    }
+    set text_edit = "Edit";
+    set text_edittag = "Edit Tags";
+    set text_add_to_memories = "Remember";
+    set text_track_comments = "Track Comments";
+    set text_untrack_comments = "Stop Tracking";
+}
+
+propgroup customhtml = "Custom HTML";
+propgroup customhtml {
+    property string layoutcredit_text {
+	des = "Layout maker";
+    }
+    set layoutcredit_text = "";
+
+    property string layoutcredit_url {
+	des = "Layout maker's URL";
+    }
+    set layoutcredit_url = "";
+
+    property string custom_header {
+        des = "Custom Header";
+        cols = 80;
+        rows = 15;
+        string_mode = "html";
+        note = "Custom classes are supported; custom IDs are not. The <br> tag is disabled and must be swapped back in the CSS if you need it, but you can easily use <p> or the display property to counteract the need for disabling the <br> tag!";
+    }
+    set custom_header = "";
+
+    property string custom_sidebar {
+        des = "Custom Sidebar";
+        cols = 80;
+        rows = 15;
+        string_mode = "html";
+        note = "Custom classes are supported; custom IDs are not. The <br> tag is disabled and must be swapped back in the CSS if you need it, but you can easily use <p> or the display property to counteract the need for disabling the <br> tag!";
+    }
+    set custom_sidebar = "";
+
+    property string custom_footer {
+        des = "Custom Footer";
+        cols = 80;
+        rows = 15;
+        string_mode = "html";
+        note = "Custom classes are supported; custom IDs are not. The <br> tag is disabled and must be swapped back in the CSS if you need it, but you can easily use <p> or the display property to counteract the need for disabling the <br> tag!";
+    }
+    set custom_footer = "";
+
+}
+
+propgroup customcss {
+
+    property string linked_stylesheet {
+        des = "Custom external stylesheet URL";
+        note = "For off-site .css files or using Google Fonts URLs if you don't want to embed the font directly in the CSS.";
+    }
+    set linked_stylesheet = "";
+
+    property string custom_css {
+        des = "Custom stylesheet";
+        cols = 80;
+        rows = 20;
+        string_mode = "css";
+    }
+    set custom_css = "/*--
+
+	Layout by YOURNAME
+	ETC ETC
+
+	-------------------------------------------
+
+	S2 Generations by Tessisamess
+	tessisamess.insanejournal.com
+	patreon.com/tessisamess
+	tessisamess.gumroad.com
+
+	-------------------------------------------
+
+	For information on this stylesheet go to:
+	s2generations.dreamish.org
+
+--*/
+
+
+/* REPLACEMENTS */
+
+:root{
+/* COLORS */
+	--headings-color: #000;
+	--text-color: #222;
+	--date-color: #999;
+	--lightest: #fff;
+
+	--page-bg: #f4f4f4;
+	--content-bg: #fff;
+	--borders: rgba(0,0,0,0.1);
+	--accent: #888;
+
+	--links: ;
+	--links-hover: ;
+
+	--content-links: ;
+	--content-links-hover: ;
+
+/* FONTS */
+	--main-font: calibri,arial,sans-serif;
+	--headings: monospace;
+
+	--body-text: 13px;
+	--nav-text: 9px;
+
+	--subject-text: 9px;
+	--entry-info-text: 9px;
+	--entry-tags-text: 8px;
+
+	--credit-text: 8px;
+
+/* DIMENSIONS */
+	--content-width: 800px;
+	--page-inset: 30px;
+
+	--side-width: 200px;
+	--side-padding: 20px;
+
+	--margin: 20px;
+	--padding: 30px;
+
+	--entry-padding: 30px;
+	--entry-margin: 30px;
+	--entry-content-margin: 10px;
+
+	--entry-icon: 60px;
+
+/* IMAGES */
+	--bg-img: url()center fixed;
+	--background-size:auto auto;
+
+	--cursor: url();
+	--cursor-hover: url();
+
+	--private: url(https://i.imgur.com/dJgLxi8.png)center left no-repeat!important;
+	--locked: url(https://i.imgur.com/tIooCJT.png)center left no-repeat!important;
+	--customs: url(https://i.imgur.com/LcxM0s0.png)center left no-repeat!important;
+}
+
+
+/* FONTS */
+
+
+
+
+/* GLOBAL ELEMENTS */
+
+.custom-element br{display:none;}
+
+*,*:before,*:after{box-sizing:border-box;}
+*:focus{outline:none;}
+form *{font-family:var(--main-font);}
+
+::selection{background:var(--accent);color:var(--lightest);}
+::-moz-selection{background:var(--accent);color:var(--lightest);}
+
+::-webkit-scrollbar-track{background:var(--page-bg);}
+::-webkit-scrollbar{width:7px;background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--accent);border:2px solid var(--page-bg);border-radius:5px;}
+
+body{margin:0;padding:0;background:var(--page-bg) var(--bg-img);background-size:var(--background-size);font-family:var(--main-font);font-size:var(--body-text);color:var(--text-color);cursor:var(--cursor),auto;}
+
+a:link,a:visited,a:active{color:var(--links);text-decoration:none;cursor:var(--cursor-hover),pointer;-webkit-transition:all 0.5s ease-in-out;-moz-transition:all 0.5s ease-in-out;-ms-transition:all 0.5s ease-in-out;-o-transition:all 0.5s ease-in-out;transition:all 0.5s ease-in-out;}
+a:hover{color:var(--links-hover);text-decoration:none;}
+
+h1,h2,h3,h4,h5,h6{font-family:var(--headings);color:var(--headings-color);margin:0;font-weight:normal;}
+
+blockquote{}
+img{max-width:100%;}
+details summary{cursor:var(--cursor-hover),auto;}
+ul{}
+hr{}
+details{}
+code{}
+table{}
+
+.ljuser{font-weight:bold;}
+.ljuser a[href*='profile'] img{display:none;}
+.ljuser a[href*='profile']:before{content:'@';}
+
+
+/* PAGE SETUP */
+
+#layout{min-height:100vh;}
+#layout-inner{max-width:var(--content-width);margin:0 auto;padding:var(--page-inset);}
+
+
+/* TOP NAV */
+
+#nav-links{margin:0 0 var(--margin) 0;font-size:var(--nav-text);}
+.nav-links-inner ul{list-style:none;padding:0;margin:0;display:flex;}
+
+.nav-links-inner li{margin:0 8px 0 0;}
+.nav-links-inner li a{}
+.nav-links-inner li a:hover{}
+
+
+/* BOTTOM NAV */
+
+.skiplinks{margin:var(--margin) 0 0 0;text-align:center;font-size:var(--entry-info-text);}
+
+.skiplinks a{}
+.skiplinks a:hover{}
+.skiplinks a.forward{}
+.skiplinks a.back{}
+
+.nav-separator{margin:0 5px;}
+
+
+/* CUSTOM HEADER */
+
+#custom-header{margin:0 0 var(--margin) 0;}
+
+
+/* CUSTOM SIDEBAR */
+
+#custom-sidebar{float:left;width:var(--side-width);}
+
+
+/* CUSTOM FOOTER */
+
+#custom-footer{margin:var(--margin) 0 0 0;}
+
+
+/* CREDIT LINK */
+
+#credit-link{position:fixed;bottom:0;left:0;padding:10px;opacity:0.5;font-size:var(--credit-text);text-transform:uppercase;letter-spacing:1px;-webkit-transition:all 0.5s ease-in-out;-moz-transition:all 0.5s ease-in-out;-ms-transition:all 0.5s ease-in-out;-o-transition:all 0.5s ease-in-out;transition:all 0.5s ease-in-out;}
+#credit-link:hover{opacity:1;}
+#credit-link a{}
+#credit-link a:hover{}
+
+
+/* SIDEBAR & ENTRIES */
+
+#content{}
+#content-inner{}
+#content-inner:after{content:'';display:table;clear:both;}
+
+
+/* ENTRY LIST */
+
+#entries{}
+#entries-inner{}
+
+.sidebar-layout #entries{margin:0 0 0 calc(var(--side-width) + var(--margin));}
+.header-sidebar-layout #entries{margin:0 0 0 calc(var(--side-width) + var(--margin));}
+
+#tagpage-header{margin:0 0 var(--margin) 0;text-align:center;}
+#tagpage-header h2{font-size:var(--entry-info);font-family:var(--main-font);}
+
+#entries a, #entries a:visited{color:var(--content-links);}
+#entries a:hover{color:var(--content-links-hover);}
+
+
+/* ENTRIES */
+
+.entry{margin:0 0 var(--entry-margin) 0;padding:var(--entry-padding);background:var(--content-bg);border:1px solid var(--borders);position:relative;}
+.entry-inner{}
+
+
+/* ENTRY HEADER */
+
+.entry-header{}
+.entry-header-inner{display:flex;align-items:center;}
+.entry-header-content{width:100%;display:flex;justify-content:space-between;}
+
+/* .poster-info ~ .entry-header-content{width:calc(100% - var(--entry-icon));} */
+.entry-header .poster-info{display:none;}
+
+.userpic{}
+.userpic img{width:var(--entry-icon);height:var(--entry-icon);margin:0 15px 0 0;}
+
+.poster-info .user{}
+.poster-info .user .ljuser{}
+.poster-info .user .ljuser a[href*='profile']{display:none;}
+.poster-info .user .ljuser ~ .ljuser{}
+
+.outer-poster{position:absolute;top:0;right:calc((var(--entry-icon) + 10px) * -1);text-align:center;font-size:smaller;}
+.outer-poster img{margin:0 0 5px 0;padding:5px;background:var(--content-bg);border:1px solid var(--borders);}
+
+.subject{}
+.subject a{}
+
+.subject h3{display:flex;align-items:center;font-size:var(--subject-text);}
+.subject h3 .security-icon{margin:0 5px 0 0;}
+
+.date-time{font-size:var(--entry-info-text);color:var(--date-color);}
+.date-time .at{margin:0 3px;}
+
+
+/* ENTRY CONTENT */
+
+.entry-content{margin:var(--entry-content-margin) 0 0 0;}
+.entry-content-inner{}
+
+
+/* ENTRY TAGS */
+
+.entry-tags{margin:var(--entry-content-margin) 0 0 0;font-size:var(--entry-tags-text);}
+.entry-tags a{}
+.entry-tags a:hover{}
+
+
+/* ENTRY FOOTER */
+
+.entry-links{margin:var(--entry-content-margin) 0 0 0;font-size:var(--entry-info-text);}
+.entry-links ul{list-style:none;padding:0;margin:0;display:flex;justify-content:flex-end;}
+
+.entry-links ul li{margin:0 0 0 8px;}
+.entry-links li.tell,.entry-links li.add-mem,.entry-links li.track,.entry-links li.untrack{display:none;}
+
+.entry-links ul li a{}
+.entry-links ul li a:hover{}
+
+
+/* TAGS PAGE */
+
+.tags-list .all-tags{list-style-position:inside;padding:0;margin:0;}
+.tags-list .all-tags li .tag-separator{margin:0 5px;}
+
+
+/* ARCHIVE PAGE */
+
+.yearlinks{text-align:center;margin-bottom:10px;}
+.yearlinks-inner{text-align:center;margin-bottom:10px;}
+.years{list-style:none;margin:0;padding:0;}
+.years li{display:inline;padding:0;}
+
+.yeartable{border-collapse:separate;border:none;width:100%;}
+.dayname{letter-spacing:2px;text-transform:uppercase;text-align:center;background:var(--accent)!important;color:var(--lightest);}
+.yeartable td{border:none!important;background:rgba(0,0,0,0.05);padding:5px;}
+
+
+/* ICON REPLACEMENTS */
+
+img[src*='entry/private.png'], img[src*='entry/protected.png'], img[src*='entry/groups.png']{width:0!important;height:0!important;padding:13px 0 0 16px!important;background-size:auto 100%!important;}
+
+img[src*='entry/private.png']{background:transparent var(--private);}
+img[src*='entry/protected.png']{background:transparent var(--locked);}
+img[src*='entry/groups.png']{background:transparent var(--customs);}";
+}
+
+function print_custom_stylesheet() {}
+
+function print_stylesheet () {
+    print_custom_stylesheet();
+}
+
+function container_open (string name) {
+    print safe "<div id='$name'>
+<div id='$name-inner'>\n";
+}
+
+function container_close () {
+    "</div>
+</div>\n";
+}
+
+function article_open (string name) {
+    print safe "<article id='$name'>
+<div id='$name-inner'>\n";
+}
+
+function article_close () {
+    "</div>
+</article>\n";
+}
+
+function header_open (string name) {
+    print safe "<header class='custom-element' id='custom-header'>";
+    print $*custom_header;
+}
+
+function header_close () {
+    "</header>\n";
+}
+
+function aside_open (string name) {
+    print safe "<aside class='custom-element' id='custom-sidebar'>";
+    print $*custom_sidebar;
+}
+
+function aside_close () {
+    "</aside>\n";
+}
+
+function footer_open (string name) {
+    if ($*opt_footer == "yes") {
+        print safe "<footer class='custom-element' id='custom-footer'>";
+        print $*custom_footer;
+    }
+}
+
+function footer_close () {
+    "</footer>\n";
+}
+
+function main_open (string name) {
+    print safe "<main id='$name'>
+<div id='$name-inner'>\n";
+}
+
+function main_close () {
+    "</div>
+</main>\n";
+}
+
+function render_layout (Page p, string lay) {
+
+   if ($lay == "CH") {
+      container_open("entries");
+      $p->print_body();
+      container_close();
+      return;
+   }
+
+   if ($lay == "CS") {
+      aside_open("custom-sidebar");
+      aside_close();
+      container_open("entries");
+      $p->print_body();
+      container_close();
+      return;
+   }
+
+   if ($lay == "CHS") { 
+      aside_open("custom-sidebar");
+      aside_close();
+      container_open("entries");
+      $p->print_body();
+      container_close();
+      return;
+   }
+}
+
+function get_layout () : string {
+   var Page p = get_page();
+   var string lay = $*layout_type;
+   if ($lay == "CH" or $lay == "CS" or $lay == "CHS") {
+      return $lay;
+   }
+   return "CH";
+}
+
+function body_class (string lay) : string {
+   var string{} map = {
+      "CH" => "header-layout",
+      "CS" => "sidebar-layout",
+      "CHS" => "header-sidebar-layout",
+   };
+   return $map{$lay};
+}
+
+function Page::print_stylesheets() {
+    if ($*linked_stylesheet != "") {
+        println safe """<link rel="stylesheet" href="$*linked_stylesheet" type="text/css" />\n""";
+    }
+    if ($*custom_css != "") {
+        println """<style type="text/css">""";
+        start_css();
+        println safe $*custom_css;
+        end_css();
+        println """</style>""";
+    }
+
+    if ($*external_stylesheet) {
+        println safe """<link rel="stylesheet" href="$.stylesheet_url" type="text/css" />\n""";
+    }
+    else {
+        println """<style type="text/css">""";
+        start_css();
+        print_stylesheet();
+        end_css();
+        println """</style>""";
+    }
+}
+
+function Page::lay_print_banner() {
+
+"""
+		<nav id="nav-links">
+			<div class="nav-links-inner">
+				<ul>
+					<li class=\"""" + ($.view == "recent" ? "recent current" : "recent") + """\"><a href="/">""" + $*text_view_recent + """</a></li>
+					<li class=\"""" + ($.view == "profile" ? "profile current" : "profile") + """\"><a href="/profile">""" + $*text_view_userinfo + """</a></li>
+					<li class=\"""" + ($.view == "read" ? "read current" : "read") + """\"><a href="/read">""" + $*text_view_friends + """</a></li>
+					<li class=\"""" + ($.view == "archive" ? "calendar current" : "calendar") + """\"><a href="/calendar">""" + $*text_view_archive + """</a></li>
+					<li class=\"""" + ($.view == "tags" ? "tags current" : "tags") + """\"><a href="/tag">""" + $*text_view_tags + """</a></li>
+				</ul>
+			</div>
+		</nav>
+
+""";
+
+}
+
+function Page::print () {
+
+ var string lay = get_layout();
+ var string body_layout_class = body_class($lay);
+
+    var string body_class;
+    if ($.data_link{"rss"}.url->contains("?tag=")) {
+        # Extract tag name if needed for further use
+        var int baseurl_length = $.base_url->length() + 14; # "/data/rss?tag=" = 14 chars
+        var int feedurl_length = $.data_link{"rss"}.url->length();
+        var string tag_name = $.data_link{"rss"}.url->substr($baseurl_length, $feedurl_length - $baseurl_length);
+        
+        # Add a custom class for tag pages
+        $body_class = "$body_layout_class pageview-tagged";
+    } else {
+        # Use the default view class
+        $body_class = $body_layout_class + " pageview-" + $.view;
+
+    }
+
+   """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="https://www.w3.org/1999/xhtml">
+	<head>
+	   """;
+	
+		$this->print_head();
+		$this->print_stylesheets();
+		"""<title>""" + $this->title() + """</title>\n""";
+	
+	"""
+	</head>
+	<body class='""" + $body_class + """'>""";  # Use the dynamically set body class
+
+    if ($.data_link{"rss"}.url->contains("?tag=")) { # If viewing tags page
+
+        var int baseurl_length = $.base_url->length() + 14; # "/data/rss?tag=" = 14 chars
+        var int feedurl_length = $.data_link{"rss"}.url->length();
+
+        var string tag_name= $.data_link{"rss"}.url->substr($baseurl_length, $feedurl_length - $baseurl_length);
+    }
+	
+	$this->print_control_strip();
+	
+	article_open("layout");
+
+	$this->lay_print_banner();
+
+if ($lay == "CH" or $lay == "CHS") {
+    header_open("custom-header");
+    header_close();
+}
+	
+	main_open("content");
+	
+        render_layout($this, $lay);
+
+	main_close();
+
+    if ($*opt_footer == "yes") {
+        footer_open("custom-footer");
+        footer_close();
+    }
+    
+    if ($*layoutcredit_text != "" and $*layoutcredit_url != "") {
+        println safe "<div id='credit-link'><span class='credit-text'>Made by </span><a href='" + $*layoutcredit_url + "'>" + $*layoutcredit_text + "</a></div>";
+    }
+
+article_close();
+	
+	"</body></html>";
+}
+
+function RecentPage::print_body() {
+
+    if ($.data_link{"rss"}.url->contains("?tag=")) { # If viewing tags page
+
+        var int baseurl_length = $.base_url->length() + 14; # "/data/rss?tag=" = 14 chars
+        var int feedurl_length = $.data_link{"rss"}.url->length();
+
+        var string tag_name= $.data_link{"rss"}.url->substr($baseurl_length, $feedurl_length - $baseurl_length);
+
+        print "<div id='tagpage-header'><h2><b>Posts Tagged:</b> <span class='tagname'>$tag_name</span></h2></div>";
+    }
+
+    foreach var Entry e ($.entries) {
+
+        # Print the entry
+        $this->print_entry($e);
+    }
+
+    if ($.nav.backward_url != "" or $.nav.forward_url != "") {
+
+        println """<div class="skiplinks">""";
+        if ($.nav.backward_url != "") {
+            println """<a href="$.nav.backward_url" class="back">"""+get_plural_phrase($.nav.backward_count, "text_skiplinks_back")+"</a>";
+        }
+        if ($.nav.backward_url != "" and $.nav.forward_url != "") {
+            print "<span class='nav-separator'>|</span>";
+        }
+        if ($.nav.forward_url != "") {
+            println """<a href="$.nav.forward_url" class="forward">"""+get_plural_phrase($.nav.forward_count, "text_skiplinks_forward")+"</a>";
+        }
+        println """</div>""";
+    }
+
+}
+
+function lang_posted_by(UserLite poster, UserLite journal, Page p) : string {
+    var string posted = (defined $poster ? ""+$poster : "<i>$*text_poster_anonymous</i>");
+    if (not $poster->equals($journal) and not ($p.view == "recent" and $p.journal_type == "C")) {
+        $posted = $posted + " <br> " + $journal;
+    }
+    return "$posted";
+}
+
+function lang_posted_by(UserLite poster, UserLite journal) : string {
+    return lang_posted_by($poster, $journal, new Page);
+}
+
+function lang_posted_date_and_time(EntryLite e, DateTime dt, bool showdate, bool showtime) : string {
+    var string posted = "Posted";
+    $posted = ($showdate ? "" : " <span class='at'>at</span> ");
+
+    if ($showdate and $showtime) {
+        if ($e.depth > 0) { # If $e is a comment
+            return $posted + "<span class='date'>" + $e->time_display("med", "") + "</span>";
+        } else {
+            return $posted + "<span class='date'>" + $e->time_display($*lang_fmt_date_med, "none") + "</span> <span class='at'>at</span> <span class='time'>" + $e->time_display("none", "%%h%%:%%min%% %%A%%M") + "</span>";
+        }
+    }
+    if ($showdate and not $showtime) {
+        return $posted + "<span class='date'>" + $e->time_display("med", "none") + "</span>";
+    }
+    if (not $showdate and $showtime) {
+        return "<span class='time'>" + $e->time_display("none", "%%h%%:%%min%% %%A%%M") + "</span>";
+    }
+    return "";
+}
+
+
+function Entry::print_linkbar() {
+    var Page p = get_page();
+    var bool printqr = false;
+
+    """
+    <footer class="entry-links">
+<ul>
+    """;
+    if ($.comments.enabled) {
+
+        $printqr = true;
+        """<li class='reply'>"""; $p->print_reply_link({"linktext" => $*text_post_comment, "target" => "qr$.journal.username$.itemid", "reply_url" => $.comments.post_url}); """</li>\n""";
+        
+        if ($.comments.count > 0 or $.comments.screened) {
+            """<li class='entry-comments'><a href="$.permalink_url#comments">"""; print safe get_plural_phrase($.comments.count,"text_read_comments"); """</a></li>\n""";
+        }
+    }
+
+    var string{} link_caption = {
+        "edit_entry" => $*text_edit,
+        "edit_tags" => $*text_edittag,
+        "mem_add" => $*text_add_to_memories,
+        "tell_friend" => "$*text_tell_friend",
+        "watch_comments" => $*text_track_comments,
+        "unwatch_comments" => $*text_untrack_comments,
+    };
+
+    var string{} class_names = {
+        "edit_entry" => "edit-entry",
+        "edit_tags" => "edit-tags",
+        "mem_add" => "add-mem",
+        "tell_friend" => "tell",
+        "watch_comments" => "track",
+        "unwatch_comments" => "untrack"
+    };
+
+    var Link link;
+    var string url;
+    var string text;
+    var string class_name;
+
+    foreach var string link_key ($.link_keyseq) {
+        $link = $this->get_link($link_key);
+        $url = $link.url;
+        $text = $link_caption{$link_key} != "" ? $link_caption{$link_key} : $link.caption;
+        $class_name = $class_names{$link_key} != "" ? $class_names{$link_key} : "other";
+        if (defined $link) {
+            print safe """<li class='$class_name'><a href="$url">$text</a></li>\n""";
+        }
+    }
+    """    </ul></footer>
+    """;
+    if ($printqr) { $p->print_reply_container({"class" => "quickreply_entry", "target" => "qr$.journal.username$.itemid"}); }
+}
+
+function print_entry(Page p, Entry e) {
+
+var string subject = "";
+if ($e.subject != "") { $subject = $e.subject; }
+    var string entryID = "entry-" + $e.itemid;
+
+    """
+    <section class='entry' id='""" + $entryID + """'>
+        <div class='entry-inner'>
+    """;
+
+      var bool showtime = $*opt_showtime;
+      var bool showdate = true;
+      var bool showposter = false;
+      var bool showuserpic = $*opt_userpic_main;
+      if ($p.view == "friends") { $showtime = $*opt_showtime; $showdate = true; $showposter = true; $showuserpic = $*opt_userpic_friends; }
+      if ($p.view == "day") { $showdate = false; }
+      if ($p.view == "entry" or $p.view == "reply") { $showdate = true; }
+      if ($p.view == "recent") { $showdate = true; }
+      if (not $e.poster->equals($e.journal)) { $showposter = true; }
+
+      "<div class='outer-poster'>\n";
+      if (($showuserpic and defined $e.userpic) or $showposter) {
+          if ($showuserpic and defined $e.userpic) { "<div class='userpic'>"+$e.userpic+"</div>\n"; }
+      }
+      if (($showuserpic and defined $e.userpic) or $showposter) {
+          "<div class='poster-info'>";
+          if ($showposter) { "<span class='user'>"+lang_posted_by($e.poster, $e.journal)+"</span>"; }
+          "</div>\n";
+      }
+      "</div>\n";
+
+      "<header class='entry-header'>\n<div class='entry-header-inner'>\n";
+      if (($showuserpic and defined $e.userpic) or $showposter) {
+          "<div class='poster-info'>\n";
+          if ($showuserpic and defined $e.userpic) { "<div class='userpic'>"+$e.userpic+"</div>\n"; }
+          "</div>\n";
+      }
+      "<div class='entry-header-content'>\n<div class='subject'><h3>\n";
+      if (defined $e.security_icon) {
+          print "<span class='security-icon'>$e.security_icon</span>\n ";
+      }
+      "<a href='$e.permalink_url'>$subject</a>\n</h3>\n";
+      if (($showuserpic and defined $e.userpic) or $showposter) {
+          "<div class='poster-info'>";
+          if (($showuserpic and defined $e.userpic) and $showposter) { "<br />"; }
+          if ($showposter) { "<span class='user'>"+lang_posted_by($e.poster, $e.journal)+"</span>"; }
+          "</div>\n";
+      }
+      "</div>\n";
+
+          if ($showdate or $showtime) {
+          	 "<div class='date-time'>";
+             print lang_posted_date_and_time($e, $e.time, $showdate, $showtime);
+             "</div>";
+          }
+      "</div>\n</div>\n</header>\n";
+      
+      "<div class='entry-content'>\n";
+         "<div class='entry-content-inner'>\n";
+         		$e->print_text();
+			"\n</div>\n</div>\n";
+
+if ($e.tags) {
+    var int tcount = 0;
+
+    if ($*opt_tag_display == "list") {
+            "<nav class='entry-tags comma-list'><strong>Tags:</strong> ";
+            foreach var Tag t ($e.tags) {
+                """<a rel="tag" href="$t.url">$t.name</a>""";
+                $tcount++;
+                if ($tcount != size $e.tags) { ", "; }
+            }
+            "</nav>\n";
+    } elseif ($*opt_tag_display == "hashtags") {
+            "<nav class='entry-tags hashtags'>";
+            foreach var Tag t ($e.tags) {
+                """<a rel="tag" href="$t.url">#$t.name</a> """;
+            }
+            "</nav>\n";
+    } elseif ($*opt_tag_display == "none") {
+            "<nav class='entry-tags none'>
+            </nav>\n";
+    }
+}
+
+         	"<div class='entry-metadata'>";
+         	$e->print_metadata();
+         	"</div>\n";
+
+         $e->print_linkbar();
+
+     "</div>\n";
+     "</section>\n";
+}
+
+function Page::print_entry(Entry e) {
+    print_entry($this, $e);
+}
+
+function YearPage::print_year_links() {
+    """<div class="yearlinks"><div class="yearlinks-inner"><ul class="years">\n""";
+    foreach var YearYear y ($.years) {
+        var string class = "";
+        var string year  = $y.year + "";
+        if ($y.displayed) {
+            $class = " class=\"active\"";
+        } else {
+            $year  = """<a href="$y.url">$year</a>""";
+        }
+        """<li$class>$year</li>\n""";
+    }
+    """</ul></div></div>\n""";
+}
+
+function TagsPage::print_body () {
+
+    """<section class="entry tags-list">
+	<div class="entry-inner">
+		<div class="subject"><h3>Journal Tags</h3></div>
+		<div class="entry-content">
+			<div class="entry-content-inner">
+				<ul class="all-tags">""";
+    foreach var TagDetail td ($.tags) {
+        var string uses = get_plural_phrase($td.use_count, "text_tag_uses");
+        print """
+					<li><a href="$td.url">$td.name</a><span class="tag-separator">-</span><span class="uses">$uses</span></li>""";
+    }
+
+    """
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>""";
+}
+
+function MonthPage::print_body () {
+
+    """<section class="entry month-list">
+	<div class="entry-inner">
+		<div class="subject"><h3>""" + $.date->date_format($*lang_fmt_month_long) + """</h3></div>
+		<div class="entry-content">
+			<div class="entry-content-inner">
+
+    <form method='post' action='$.redir.url'><center>""";
+    $.redir->print_hiddens();
+    if ($.prev_url != "") { """<a href='$.prev_url'>&lt;</a>\n"""; }
+    if (size $.months > 1) {
+        """
+        <select name='redir_key'>\n""";
+        foreach var MonthEntryInfo mei ($.months) {
+            var string sel;
+            if ($mei.date.year == $.date.year and $mei.date.month == $.date.month) {
+                $sel = " selected='selected'";
+            }
+            """
+            <option value='$mei.redir_key'$sel>""" + $mei.date->date_format($*lang_fmt_month_long) + "</option>\n";
+        }
+        """
+        </select>\n<input type='submit' value='View' />\n""";
+    }
+    if ($.next_url != "") { "\n<a href='$.next_url'>&gt;</a>\n"; }
+    """
+    </center></form>\n<dl>""";
+    foreach var MonthDay d ($.days) {
+        if ($d.has_entries) {
+            """
+            <dt><a href="$d.url"><b>""";
+            print lang_ordinal($d.day);
+            """</b></a></dt>\n<dd>""";
+            $d->print_subjectlist();
+            """</dd>\n""";
+        }
+    }
+
+    """</dl>\n
+			</div>
+		</div>
+	</div>
+</section>""";
+}
+
+function YearPage::print_month(YearMonth m) {
+    if (not $m.has_entries) { return; }
+
+    """<section class="entry month-calendar">
+	<div class="entry-inner">
+		<div class="subject"><h3><a href="$m.url">""" + $m->month_format() + """</a></h3></div>
+		<div class="entry-content">
+			<div class="entry-content-inner">
+				<table class="yeartable" align="center">
+					<tr>\n""";
+    foreach var int d (weekdays()) {
+        """						<td width="50" class="dayname">""" + $*lang_dayname_short[$d] + """</td>\n""";
+    }
+    "					</tr>\n";
+    foreach var YearWeek w ($m.weeks) {
+        $w->print();
+    }
+    "\n				</table>\n";
+
+    "			</div>\n		</div>\n";
+    """</div></section>\n""";
+}
+
+function DayPage::print_body() {
+    if ($.has_entries) {
+
+        foreach var Entry e ($.entries) {
+            $this->print_entry($e);
+        }
+
+        "</div>";
+    } else {
+        "<div class='no-entries'>$*text_noentries_day</div>";
+    }
+
+    "<div class='skiplinks'>\n";
+    "<a href='$.prev_url' class='back'>$*text_day_prev</a><span class='nav-separator'>|</span>";
+    "<a href='$.next_url' class='forward'>$*text_day_next</a>\n</div>";
+
+}
