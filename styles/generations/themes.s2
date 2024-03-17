@@ -1,0 +1,5 @@
+#NEWLAYER: generations/default
+layerinfo type = "theme";
+layerinfo name = "Default";
+layerinfo redist_uniq = "generations/default";
+layerinfo author_name = "tess";
