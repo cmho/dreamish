@@ -51,7 +51,7 @@ sub default_themes {
         drifting         => 'drifting/blue',
         dustyfoot        => 'dustyfoot/dreamer',
         easyread         => 'easyread/green',
-        generations      => 'generations/default',
+        generations      => 'generations/sunrise',
         goldleaf         => 'goldleaf/elegantnotebook',
         fantaisie        => 'fantaisie/unrelentingroutine',
         fiveam           => 'fiveam/earlyedition',
