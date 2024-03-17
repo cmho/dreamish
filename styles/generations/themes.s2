@@ -4,7 +4,7 @@ layerinfo name = "Basic";
 layerinfo redist_uniq = "generations/basic";
 layerinfo author_name = "Tess Nelson @tessisamess";
 
-#NEWLAYER generations/sunrise
+#NEWLAYER: generations/sunrise
 layerinfo type = "theme";
 layerinfo name = "Sunrise";
 layerinfo redist_uniq = "generations/sunrise";
