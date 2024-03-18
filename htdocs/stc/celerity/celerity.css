@@ -11,16 +11,16 @@
  */
 
  /*  Colors:
-    dkgrn=#999966
+    dkgrn=#706dc0
     text dkgrn=#777711
-    ltgrn=#DDDDAA
-    vryltgrn=#EEEECC
+    ltgrn=#aaafdd
+    vryltgrn=#ceccee
     grygrn=#EEEEDD
     dkgrygrn=#DDDDCC
-    link ltgrn=#888833
+    link ltgrn=#9895e9
     link dkgrn=#666611
  *  Colors for template:
-    oddcomment=#EEEECC
+    oddcomment=#ceccee
     evencomment=#DDDDBB
 */
 
@@ -50,7 +50,7 @@ ul { list-style: square;}
 
 a:link,
 .link {
-    color: #888833;
+    color: #9895e9;
 }
 a:visited {
     color: #666611;
@@ -129,7 +129,7 @@ a:active,
 #header-divider { position: absolute;
     top: 110px;
     left: 0;
-    background-color: #999966;
+    background-color: #706dc0;
     background-image: url("/img/celerity/dk-stripe.jpg");
     background-position: right;
     background-repeat: repeat-y;
@@ -155,7 +155,7 @@ nav { position: absolute;
     top: 0;
     left: 1em;
     width: 9em;
-    background-color: #DDDDAA;
+    background-color: #aaafdd;
     }
 nav ul { margin-left: 5px;
         margin-right: 3px;
@@ -180,14 +180,14 @@ nav .topnav a {color: #222200; }
     }
     #header-userpic img { margin-top: 10px;
         border: none;
-        background-color: #DDDDAA; /*so the square doesn't show behind transparent icons */
+        background-color: #aaafdd; /*so the square doesn't show behind transparent icons */
         }
 
 /**
  * Footer
  */
-footer { border-top: 4px double #999966;
-    border-bottom: 4px double #999966;
+footer { border-top: 4px double #706dc0;
+    border-bottom: 4px double #706dc0;
     margin: 1em;
     text-align: center;
     }
@@ -208,7 +208,7 @@ footer { border-top: 4px double #999966;
  */
 #content {
     margin-left: 1em;
-    border-left: 9em solid #DDDDAA;
+    border-left: 9em solid #aaafdd;
     margin-top: 170px;
     padding: 1px 1em 1em 1.5em;
     min-height: 73rem;
@@ -349,39 +349,39 @@ footer { border-top: 4px double #999966;
 }
 
 .tablist .tab a {
-    background: #DDDDAA;
+    background: #aaafdd;
     color: #000;
-    border-color: #999966;
+    border-color: #706dc0;
 }
 .tablist .tab a:hover, .tablist .tab a.active {
-    background: #EEEECC;
+    background: #ceccee;
 }
 .tab-header {
-    background: #EEEECC;
-    border-top-color: #EEEECC;
-    border-left: 1px solid #999966;
-    border-right: 1px solid #999966;
+    background: #ceccee;
+    border-top-color: #ceccee;
+    border-left: 1px solid #706dc0;
+    border-right: 1px solid #706dc0;
 }
 .tab-container {
   background-color:#f7f7f7;
-  border: 1px solid #999966;
+  border: 1px solid #706dc0;
   border-top: none;
 }
 
 .action-bar {
     text-align: center;
-    background-color: #EEEECC;
+    background-color: #ceccee;
 }
 .action-box .inner, .comment-page-list {
     color: #000;
     border: 1px solid #555555;
-    background-color: #DDDDAA;
+    background-color: #aaafdd;
 }
 
 .select-list input {
     color: #222;
-    background-color: #DDDDAA;
-    border: 2px solid #999966;
+    background-color: #aaafdd;
+    border: 2px solid #706dc0;
 }
 .select-list input:active {
     color: #555;
@@ -399,19 +399,19 @@ footer { border-top: 4px double #999966;
     border: 1px solid;
 }
 .highlight, .highlight-box {
-    border-color: #999966;
-    background: #EEEECC;
+    border-color: #706dc0;
+    background: #ceccee;
     color: #000;
 }
 .searchhighlight {
-    background: #eeeecc;
+    background: #ceccee;
     color: #000;
     padding: 0.2em;
     font-weight: bold;
 }
 .inset-box {
-    border-right: 1px solid #DDDDAA;
-    border-bottom: 1px solid #DDDDAA;
+    border-right: 1px solid #aaafdd;
+    border-bottom: 1px solid #aaafdd;
     background: #fff;
     padding: 3px 5px;
 }
@@ -420,8 +420,8 @@ footer { border-top: 4px double #999966;
     padding: 0.5em;
 }
 .warning-box {
-    border: 1px solid #999966;
-    background-color: #DDDDAA;
+    border: 1px solid #706dc0;
+    background-color: #aaafdd;
     color: #000;
 }
 .error-box, .alert-box {
@@ -455,15 +455,15 @@ table.grid, table.grid td {
     border-color: #ccc;
 }
 .select-list li img {
-    border-color: #EEEECC;
+    border-color: #ceccee;
 }
 .selected, .select-list li.selected, tr.selected td {
-    background-color: #EEEECC;
-    border-color: #999966;
+    background-color: #ceccee;
+    border-color: #706dc0;
 }
 
 form, fieldset, legend, legend span {
-    border-color: #999966;
+    border-color: #706dc0;
 }
 .hint-input {
     color: #777;
@@ -491,20 +491,20 @@ form, fieldset, legend, legend span {
 }
 
 .section-nav {
-    background-color: #EEEECC;
+    background-color: #ceccee;
 }
 .section-nav li a, .section-nav ul, .section-nav li, .section-nav-separator {
-    border-color: #999966;
+    border-color: #706dc0;
     color: #777711;
 }
 .section-nav li a:visited {
-    color: #999966;
+    color: #706dc0;
 }
 .section-nav li.on {
     background-color: #fff;
 }
 .section-nav-content {
-    border-color: #999966;
+    border-color: #706dc0;
 }
 .section-nav-inner-wrapper {
     background: url("/img/celerity/celgrn-borderpixel.gif") repeat-y scroll 134px 50%;;
@@ -522,11 +522,11 @@ form, fieldset, legend, legend span {
 
 .header {
     background-color: #EEEEDD;
-    border-bottom: 1px solid #999966;
+    border-bottom: 1px solid #706dc0;
 }
 .subheader {
-    background-color: #EEEECC;
-    border-bottom: 1px solid #999966;
+    background-color: #ceccee;
+    border-bottom: 1px solid #706dc0;
     margin: 1em 0 0;
     padding: 0.2em;
     font-size: 110%;
@@ -537,38 +537,38 @@ form, fieldset, legend, legend span {
 }
 
 .token:hover, .token.hover, .token:focus, .token.focus {
-    color: #999966;
+    color: #706dc0;
     border-color:#666611;
 }
 
 .token .token_remove:hover, .token .token_remove:focus {
-    color: #999966;
-    background-color: #EEEECC;
+    color: #706dc0;
+    background-color: #ceccee;
 }
 
 #iconselector_icons_list li:hover, .kwmenu .selected, #iconselector_icons_list .iconselector_selected {
-    border-color: #999966;
+    border-color: #706dc0;
 }
 
 .slidecontrols a:hover {
-    color: #999966;
+    color: #706dc0;
 }
 
 /* contextualhover.css */
 div.ContextualPopup div.Inner {
     background-color: #fff !important;
     color: #000 !important;
-    border: 1px solid #999966;
+    border: 1px solid #706dc0;
     }
 div.ContextualPopup div.Inner a, div.ContextualPopup div.Inner a:visited {
-        color: #999966 !important;
+        color: #706dc0 !important;
         }
 
 .ippu {
     color: #000000
 }
 .ippu .track_title {
-    color: #DDDDAA;
+    color: #aaafdd;
 }
 
 /**
@@ -584,20 +584,20 @@ div.ContextualPopup div.Inner a, div.ContextualPopup div.Inner a:visited {
 .entry .link, .comment .link {color: #222211; } /*overrides having link color applied to :before and :after elements*/
 
 .comment .header { border-bottom: none; border-right: none; }
-.comment-depth-odd > .dwexpcomment .header  { background-color: #EEEECC; }
+.comment-depth-odd > .dwexpcomment .header  { background-color: #ceccee; }
 .comment-depth-even > .dwexpcomment .header { background-color: #DDDBBB; }
 .screened .header{ background-color: #EEEEEE; }
 
 /* bml talkpage*/
 .cmtbar { border-bottom: none; border-right: none; }
-td.odd  { background-color: #EEEECC; }
+td.odd  { background-color: #ceccee; }
 td.even { background-color: #DDDBBB; }
 td.screened { background-color: #EEEEEE; }
 
 /* profile.css */
 .section, .username, .actions li {
-    background-color: #EEEECC;
-    border-bottom: 1px solid #999966;
+    background-color: #ceccee;
+    border-bottom: 1px solid #706dc0;
     color: #777711;
 }
 .section span.section_link {
@@ -606,11 +606,11 @@ td.screened { background-color: #EEEEEE; }
 
 /* lj_settings.css */
 .section_head {
-    background-color: #DDDDAA;
+    background-color: #aaafdd;
     border: none;
 }
 .field_name {
-    background-color: #EEEECC;
+    background-color: #ceccee;
 }
 
 /* esn.css */
@@ -620,12 +620,12 @@ td.screened { background-color: #EEEEEE; }
 
 /* community/settings */
 .community-settings legend {
-    color: #888833;
+    color: #9895e9;
 }
 
 /* shop pages */
 .shop-item-highlight {
-    border: 1px solid #999966;
+    border: 1px solid #706dc0;
 }
 
 /* inbox */
@@ -634,8 +634,8 @@ td.screened { background-color: #EEEEEE; }
     border: 1px solid #fff;
 }
 .folders a.selected {
-    background: #EEEECC;
-    border-color: #999966;
+    background: #ceccee;
+    border-color: #706dc0;
 }
 .folders a:hover {
     border-color: #DDDDCC;
@@ -643,11 +643,11 @@ td.screened { background-color: #EEEEEE; }
 }
 
 /* entry.css */
-a#lj_userpicselect {color:#999966;}
+a#lj_userpicselect {color:#706dc0;}
 #lj_userpicselect_img {border:1px solid #fff;}
-#lj_userpicselect_img:hover {border:1px solid #999966;}
-#lj_userpicselect_img_txt {color:#999966 !important;}
-#userpic_preview_image.userpic_loggedout {border:1px solid #999966;}
+#lj_userpicselect_img:hover {border:1px solid #706dc0;}
+#lj_userpicselect_img_txt {color:#706dc0 !important;}
+#userpic_preview_image.userpic_loggedout {border:1px solid #706dc0;}
 .userpic_preview_border {border:1px solid #ccc;}
 #infobox {border-left:1px solid #000;}
 #compose-entry {border-bottom:1px solid #bbb;}
@@ -655,27 +655,27 @@ a#lj_userpicselect {color:#999966;}
 #compose-entry ul li.on a {border-bottom:1px solid #fff;}
 #draft-container {border:1px solid #bbb;border-top:none;}
 #draftstatus {background-color:#fff;}
-#spellcheck-results {border:1px solid #DDDDAA;background-color: #fff;}
+#spellcheck-results {border:1px solid #aaafdd;background-color: #fff;}
 #htmltools {border-right:1px solid #bbb;border-left:1px solid #bbb;background:#fff;}
 #htmltools ul {border-bottom:1px solid #8D8D8D;}
 #options, #public, #submitbar {border:1px solid #DDDDCC;background-color:#EEEEDD;}
 
 /* create flow */
-.appwidget-createaccount .create-button, .appwidget-createaccountprogressmeter .step-block-inactive { color: #222; background-color: #DDDDAA; }
+.appwidget-createaccount .create-button, .appwidget-createaccountprogressmeter .step-block-inactive { color: #222; background-color: #aaafdd; }
 .appwidget-createaccountprogressmeter .step-block-active { color: #fff; background-color: #777711; }
 .appwidget-createaccountprogressmeter .step-selected, .appwidget-createaccountprofile .header { color: #777711; }
-.appwidget-createaccountprogressmeter .step-previous { color: #DDDDAA; }
+.appwidget-createaccountprogressmeter .step-previous { color: #aaafdd; }
 .appwidget-createaccountprogressmeter .step-next { color: #222; }
 .appwidget-createaccountprofile .field-name { background-color: #e0e0e0; }
 
 /* lj_base-app.css */
 hr.hr {
-    color: #999966;
-    background-color: #999966;
+    color: #706dc0;
+    background-color: #706dc0;
 }
 
 .appwidget .more-link {
-    color: #999966 !important;
+    color: #706dc0 !important;
     background: url('/img/arrow-double-black.gif') no-repeat 0 60%;
 }
 
@@ -693,7 +693,7 @@ hr.hr {
 #archive-month .navigation a {
     font-weight: bold;
     background-color: transparent;
-    color: #888833;
+    color: #9895e9;
     text-decoration: underline;
 }
 
