@@ -61,6 +61,11 @@ a:active,
     text-decoration: none;
 }
 
+#logo img {
+    max-width: auto;
+    max-height: 4em;
+}
+
 #canvas {
     padding-top: 1px;  /*to ensure margin*/
 }
