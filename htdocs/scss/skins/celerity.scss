@@ -174,7 +174,7 @@ ul { list-style: square;}
      top: $nav-small-screen-header-height;
      left: 0;
      background-color: $header-image-color;
-     background-image: url("/img/celerity/dk-stripe.jpg");
+     background-image: url("/img/celerity/dk-stripe.png");
      background-position: right;
      background-repeat: repeat-y;
      width: 100%;
@@ -183,7 +183,7 @@ ul { list-style: square;}
          margin-left: 1em;
          height: 20px;
          width: 9em;
-         background: url("/img/celerity/stripes.jpg");
+         background: url("/img/celerity/stripes.png");
          background-position: center;
     }
 }
@@ -232,7 +232,7 @@ footer { border-top: 4px double $header-image-color;
 
     /*Scheme specific div to contain sidebar stripes*/
     #page-decoration {
-        background-image: url("/img/celerity/lt-stripe.jpg");
+        background-image: url("/img/celerity/lt-stripe.png");
         background-repeat: repeat-x;
         background-position: top;
         width: $sidebar-width;
@@ -277,7 +277,7 @@ footer { border-top: 4px double $header-image-color;
 
     #header-userpic { text-align: center;
         height: 100px;
-        background-image: url("/img/celerity/square.jpg");
+        background-image: url("/img/celerity/square.png");
         background-repeat: no-repeat;
         background-position: center;
         }
