@@ -156,6 +156,9 @@ ul { list-style: square;}
     position: absolute;
     top: 0;
     right: 25px;
+    height: 6.875em;
+    display: flex;
+    align-items: center;
 
     #sitename {
         font-family: "Century Gothic", Verdana, sans-serif;
@@ -165,6 +168,14 @@ ul { list-style: square;}
         a {
             color: $strong-accent-color;
         }
+    }
+
+    a {
+      display: block;
+    }
+
+    img {
+      max-height: 4em;
     }
 }
 
