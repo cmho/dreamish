@@ -179,13 +179,16 @@ ul { list-style: square;}
     }
 }
 
+nav {
+  z-index: 99;
+}
+
  /*Scheme specific divs to contain header stripes*/
 #header-divider {
      position: absolute;
      top: $nav-small-screen-header-height;
      left: 0;
      background-color: $header-image-color;
-     background-image: url("/img/celerity/dk-stripe.png");
      background-position: right;
      background-repeat: repeat-y;
      width: 100%;
